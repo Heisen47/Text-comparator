@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Comparator</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; gap: 10px; }
+        .container { width: 50%; height: 100vh; overflow-y: auto; padding: 10px; border: 1px solid black; }
+        .highlight { background-color: yellow; }
+    </style>
+</head>
+<body>
+    <div class="container" id="left-panel">
+        <h3>Reference File</h3>
+        <pre id="left-text"></pre>
+    </div>
+    <div class="container" id="right-panel">
+        <h3>Upload File</h3>
+        <input type="file" id="file-input">
+        <pre id="right-text"></pre>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
